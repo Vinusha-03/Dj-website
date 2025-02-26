@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up & Login - DJ PREM</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="signupStyle.css">
+</head>
+<body>
+
+    
+    <section class="signup-section" id="signup-section">
+        <div class="signup-container">
+            <h2>Sign Up</h2>
+            <p>Join our community and stay updated with DJ PREM events.</p>
+            <form id="signup-form">
+                <input type="text" id="signup-name" placeholder="Your Name" required>
+                <input type="email" id="signup-email" placeholder="Your Email" required>
+                <input type="password" id="signup-password" placeholder="Create Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p id="signup-message" class="hidden">Thank you for signing up! 🎧</p>
+            <p>Already have an account? <a href="#" id="show-login">Login here</a></p>
+        </div>
+    </section>
+
+    <!-- Login Section -->
+    <section class="signup-section hidden" id="login-section">
+        <div class="signup-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="email" id="login-email" placeholder="Your Email" required>
+                <input type="password" id="login-password" placeholder="Enter Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p id="login-message" class="hidden"></p>
+            <p>New user? <a href="#" id="show-signup">Sign up here</a></p>
+        </div>
+    </section>
+
+    <script src="signup.js"></script>
+</body>
+</html>
